@@ -45,4 +45,16 @@ int main() {
 
     int matriz[filas][columnas];
     int transpuesta[columnas][filas];
+
+MatrizA(filas, columnas, matriz);
+
+    printf("\nMatriz original:\n");
+    imprimirMatriz(filas, columnas, matriz);
+
+    MTranspuesta(filas, columnas, matriz, transpuesta); // Calcula la matriz transpuesta de la matriz original y la almacena en la matriz transpuesta.
+
+    printf("\nMatriz transpuesta:\n");
+    imprimirMatriz(columnas, filas, transpuesta);
+
+    return 0;
 }
