@@ -23,3 +23,13 @@ void imprimirMatriz(int filas, int columnas, int matriz[filas][columnas]) {
         printf("\n");
     }
 }
+
+void MTranspuesta(int filas, int columnas, int matriz[filas][columnas], int transpuesta[columnas][filas]) {
+    int i, j;
+
+    for (i = 0; i < filas; i++) {
+        for (j = 0; j < columnas; j++) {
+            transpuesta[j][i] = matriz[i][j]; // Intercambia filas por columnas para generar la matriz transpuesta
+        }
+    }
+}
