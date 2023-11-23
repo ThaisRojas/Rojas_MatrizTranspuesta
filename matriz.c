@@ -33,3 +33,16 @@ void MTranspuesta(int filas, int columnas, int matriz[filas][columnas], int tran
         }
     }
 }
+
+int main() {
+    int filas, columnas;
+
+    printf("Ingrese el número de filas: "); // Solicita al usuario cuantas filas
+    scanf("%d", &filas);
+
+    printf("Ingrese el número de columnas: "); 
+    scanf("%d", &columnas);
+
+    int matriz[filas][columnas];
+    int transpuesta[columnas][filas];
+}
