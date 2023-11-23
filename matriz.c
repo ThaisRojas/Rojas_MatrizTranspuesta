@@ -12,3 +12,14 @@ void MatrizA(int filas, int columnas, int matriz[filas][columnas]) {
         }
     }
 }
+
+void imprimirMatriz(int filas, int columnas, int matriz[filas][columnas]) {
+    int i, j;
+
+    for (i = 0; i < filas; i++) {
+        for (j = 0; j < columnas; j++) {
+            printf("%d\t", matriz[i][j]);
+        }
+        printf("\n");
+    }
+}
